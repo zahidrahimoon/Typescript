@@ -1,2 +1,2 @@
 # Typescript
-Practice questions 
+Practice questions...
