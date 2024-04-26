@@ -1,3 +1,12 @@
+<h1 align="center">
+   TypeScript
+  <img align="center" src="https://img.icons8.com/color/48/000000/typescript.png" alt="TypeScript icon">
+</h1>
+
+
+
+
+
 1. **What is TypeScript, and how does it differ from JavaScript?**
    - TypeScript is a statically typed superset of JavaScript that adds optional types to the language. This means you can define types for variables, function parameters, return values, and more in TypeScript, which helps catch errors early in the development process. JavaScript, on the other hand, is dynamically typed, meaning types are determined at runtime.
 
