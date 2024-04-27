@@ -24,27 +24,28 @@ let name: string = "Zahid Rahimoon";
 4. **List of Type annotation in Typescript**
     - Here are some type annotation in TypeScript:
 
-1. **Basic Types:**
+     1. ***Basic Types:***
    ```typescript
    let age: number = 18;
    let name: string = "Zahid";
    let isValid: boolean = true;
    ```
 
-2. **Arrays:**
+     2. ***Arrays:***
    ```typescript
    let numbers: number[] = [1, 2, 3];
    let names: string[] = ["Zahid", "Zara", "Rahimoon"];
    let flags: boolean[] = [true, false, true];
    ```
 
-3. **Objects:**
+      3. ***Objects:***
    ```typescript
    let user: { name: string, age: number } = { name: "Zara", age: 17 };
    ```
 
-4. **Intersection Types:**
-      ```typescript
+      4. ***Intersection Types:***
+
+    ```typescript
      interface Person {
        name: string;
        age: number;
