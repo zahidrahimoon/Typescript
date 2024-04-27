@@ -19,4 +19,41 @@
 ```typescript
 let name: string = "Zahid Rahimoon";
 ```
-Type annotations are optional in TypeScript, as TypeScript can often infer the types based on the value assigned. However, using explicit type annotations is considered good practice, especially for code clarity and error prevention.
+ - Type annotations are optional in TypeScript, as TypeScript can often infer the types based on the value assigned. However, using explicit type annotations is considered good practice, especially for code clarity and error prevention.
+
+4. **List of Type annotation in Typescript**
+    - Here are some type annotation in TypeScript:
+
+1. **Basic Types:**
+   ```typescript
+   let age: number = 18;
+   let name: string = "Zahid";
+   let isValid: boolean = true;
+   ```
+
+2. **Arrays:**
+   ```typescript
+   let numbers: number[] = [1, 2, 3];
+   let names: string[] = ["Zahid", "Zara", "Rahimoon"];
+   let flags: boolean[] = [true, false, true];
+   ```
+
+3. **Objects:**
+   ```typescript
+   let user: { name: string, age: number } = { name: "Zara", age: 17 };
+   ```
+
+4. **Intersection Types:**
+      ```typescript
+     interface Person {
+       name: string;
+       age: number;
+     }
+
+     function greet(person: Person) {
+       return `Hello, ${person.name}!`;
+     }
+
+     let user = { name: "Zahid", age: 18 };
+     console.log(greet(user)); 
+     ```
