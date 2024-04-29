@@ -54,3 +54,30 @@ let name: string = "Zahid Rahimoon";
      let user = { name: "Zahid", age: 18 };
      console.log(greet(user)); 
      ```
+
+5. **What is a type alias in TypeScript?**
+   - A type alias in TypeScript allows you to create a new name for a type. It's similar to defining a new type but can be more descriptive and reusable.
+
+6. **How do you declare a type alias in TypeScript?**
+   - To declare a type alias, you use the `type` keyword followed by the alias name and the type definition. For example:
+     ```typescript
+     type MyString = string;
+     ```
+
+7. **What are the benefits of using type aliases?**
+   - Type aliases can improve code readability and maintainability by providing descriptive names for complex types. They also allow you to easily reuse types throughout your codebase.
+
+8. **How do you create a type alias for an object type in TypeScript?**
+   - To create a type alias for an object type, you define the alias name and specify the object's properties along with their types. For example:
+     ```typescript
+     type MyObject = { id: number; name: string };
+     ```
+
+9. **Can you use type aliases to define recursive types in TypeScript?**
+   - Yes, you can use type aliases to define recursive types by using the alias name within the type definition. However, you need to be careful to avoid infinite recursion.
+
+10. **What is the difference between type aliases and interfaces in TypeScript?**
+   - Type aliases and interfaces are similar but have some differences. One key difference is that type aliases can represent any type, including primitive types, union types, and intersection types, while interfaces can only represent object types.
+
+11. **When should you use a type alias instead of an interface in TypeScript?**
+    - Use a type alias when you need to create a name for a complex type that can't be expressed easily with an interface, such as union types, intersection types, or tuple types. Use an interface when you're defining the shape of an object type.
