@@ -81,3 +81,52 @@ let name: string = "Zahid Rahimoon";
 
 11. **When should you use a type alias instead of an interface in TypeScript?**
     - Use a type alias when you need to create a name for a complex type that can't be expressed easily with an interface, such as union types, intersection types, or tuple types. Use an interface when you're defining the shape of an object type.
+
+12. **Difference between function declarations and arrow functions:**
+   - Function declarations use the `function` keyword and have their own `this` context.
+   - Arrow functions use the `=>` syntax and do not have their own `this` context, instead, they inherit `this` from the surrounding code.
+
+13. **`this` keyword in JavaScript and arrow functions:**
+   - In JavaScript, `this` refers to the current execution context. In arrow functions, `this` is lexically scoped and refers to the `this` value of the surrounding code.
+   
+14. **Higher-order functions example:**
+   - Higher-order functions are functions that take other functions as arguments or return functions. For example:
+   ```typescript
+   function applyOperation(a: number, b: number, operation: (x: number, y: number) => number): number {
+       return operation(a, b);
+   }
+
+   const sum = (x: number, y: number) => x + y;
+   const result = applyOperation(5, 3, sum);
+   console.log(result); // Output: 8
+   ```
+
+15. **Defining optional parameters:**
+   - Optional parameters in TypeScript are denoted by adding a `?` after the parameter name.
+   ```typescript
+   function greet(name?: string) {
+       if (name) {
+           console.log(`Hello, ${name}!`);
+       } else {
+           console.log("Hello, World!");
+       }
+   }
+
+   greet(); // Output: Hello, World!
+   greet("Zahid"); // Output: Hello, Zahid!
+   ```
+
+16. **Function overloading:**
+   - Function overloading allows a function to have multiple signatures. TypeScript will determine which function signature to use based on the number and types of arguments provided.
+   ```typescript
+   function combine(a: string, b: string): string;
+   function combine(a: number, b: number): number;
+   function combine(a: any, b: any): any {
+       return a + b;
+   }
+
+   const result1 = combine("Hello, ", "world!");
+   const result2 = combine(5, 3);
+   ```
+17. **Difference between `foo(): void` and `foo(): undefined`:**
+   - `foo(): void` indicates that the function does not return a value, while `foo(): undefined` indicates that the function returns `undefined`.
