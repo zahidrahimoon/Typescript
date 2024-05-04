@@ -130,3 +130,66 @@ let name: string = "Zahid Rahimoon";
    ```
 17. **Difference between `foo(): void` and `foo(): undefined`:**
    - `foo(): void` indicates that the function does not return a value, while `foo(): undefined` indicates that the function returns `undefined`.
+
+Certainly! Let's go through the interview questions first, and then I'll provide five programs for each concept: arrays, tuples, and enums.
+
+18. **How do you declare an array in TypeScript?**
+   - Answer: An array in TypeScript can be declared using the following syntax:
+     ```typescript
+     let arrayName: dataType[] = [value1, value2, ...];
+     ```
+
+19. **What is the difference between declaring an array using `[]` and using the `Array` type?**
+   - Answer: Declaring an array using `[]` specifies the type of elements directly, while using the `Array` type allows you to specify the type of elements as a generic parameter.
+
+20. **How can you access elements in an array?**
+   - Answer: Elements in an array can be accessed using index notation, e.g., `arrayName[index]`.
+
+21. **How do you add elements to an array?**
+   - Answer: Elements can be added to an array using methods like `push()`, `unshift()`, or by directly assigning a value to a specific index.
+
+22. **How do you remove elements from an array?**
+   - Answer: Elements can be removed from an array using methods like `pop()`, `shift()`, or by using the `splice()` method.
+
+23. **Explain the difference between `forEach`, `map`, `filter`, and `reduce` methods when working with arrays.**
+   - Answer: 
+     - `forEach`: Iterates over each element in the array and executes a callback function.
+     - `map`: Creates a new array by applying a function to each element in the array.
+     - `filter`: Creates a new array with elements that pass the test of a provided function.
+     - `reduce`: Reduces the array to a single value by applying a function to each element and accumulating the result.
+
+24. **What is a tuple in TypeScript?**
+   - Answer: A tuple is a data structure in TypeScript that allows you to store a fixed number of elements of different types.
+
+25. **How do you declare a tuple?**
+   - Answer: Tuples are declared using square brackets `[]` with the types of elements inside, e.g., `[type1, type2, ...]`.
+
+26. **How is a tuple different from an array?**
+   - Answer: Tuples have a fixed number of elements with known types, while arrays can have a variable number of elements of the same type.
+
+27. **Can the order of types in a tuple be changed?**
+   - Answer: No, the order of types in a tuple cannot be changed after it is declared.
+
+28. **How do you access elements in a tuple?**
+   - Answer: Elements in a tuple can be accessed using index notation, similar to arrays, e.g., `tupleName[index]`.
+
+29. **Can a tuple contain elements of different data types?**
+   - Answer: Yes, a tuple can contain elements of different data types.
+     
+30. **What is an enum in TypeScript?**
+   - Answer: An enum in TypeScript is a way to define a set of named constants.
+
+31. **How do you declare an enum?**
+   - Answer: Enums are declared using the `enum` keyword, followed by the enum name and a list of constant values.
+
+32. **Can enums have string values?**
+   - Answer: Yes, enums can have string values by explicitly assigning values to each enum member.
+
+33. **How do you access enum values?**
+   - Answer: Enum values can be accessed using dot notation, e.g., `EnumName.EnumMember`.
+
+34. **Can you assign a numeric value to enum members?**
+   - Answer: Yes, enum members can be assigned numeric values, which can be useful for creating mappings or calculations.
+
+35. **How are enums different from objects?**
+   - Answer: Enums are similar to objects in that they can have properties, but enums are limited to a set of predefined values and cannot have methods or additional properties.
