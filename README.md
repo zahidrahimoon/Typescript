@@ -183,7 +183,7 @@ Certainly! Let's go through the interview questions first, and then I'll provide
    - Answer: Enums are declared using the `enum` keyword, followed by the enum name and a list of constant values.
 
 32. **Can enums have string values?**
-   - Answer: Yes, enums can have string values by explicitly assigning values to each enum member.
+   - Answer: Yes, enums can have string values by explicitly assigning values to each enum member..
 
 33. **How do you access enum values?**
    - Answer: Enum values can be accessed using dot notation, e.g., `EnumName.EnumMember`.
