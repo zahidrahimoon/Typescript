@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 font-sans flex items-center justify-center min-h-screen">
+
+    <div class="bg-gray-800 p-8 rounded-3xl shadow-2xl w-full max-w-md mx-4 sm:mx-auto">
+        <h1 class="text-4xl font-playfair font-semibold text-center text-white mb-6">Counter Application</h1>
+        <div class="text-center">
+            <p id="counter" class="text-5xl font-playfair font-semibold text-white mb-6 transition duration-300 ease-in-out">0</p>
+            <div class="flex space-x-6 justify-center">
+                <button id="increment" class="bg-gray-700 text-white py-3 px-6 rounded-full text-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 transition transform hover:scale-105">
+                    Increment
+                </button>
+                <button id="decrement" class="bg-gray-700 text-white py-3 px-6 rounded-full text-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 transition transform hover:scale-105">
+                    Decrement
+                </button>
+                <button id="reset" class="bg-gray-700 text-white py-3 px-6 rounded-full text-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 transition transform hover:scale-105">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
